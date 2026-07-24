@@ -9,17 +9,17 @@ import { GoogleGenAI } from '@google/genai';
 // on serverless the process cwd isn't the app folder, so resolve paths
 // relative to this file instead of '.'.
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.join(__dirname, '..');
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static(__dirname));
-
+app.use(express.static(ROOT));
 // serverless filesystems are read-only except /tmp, so read the committed
 // store.json as a seed and do all writing to /tmp.
-const SEED_PATH = path.join(__dirname, 'store.json');
+const SEED_PATH = path.join(ROOT, 'store.json');
 const STORE_PATH = process.env.VERCEL ? '/tmp/store.json' : SEED_PATH;
 
 // everything lives here in memory. events is a flat list of event objects.
