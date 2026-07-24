@@ -1,0 +1,461 @@
+{
+  "events": [
+    {
+      "date": "2026-07-01",
+      "title": "COMP3121 lecture",
+      "start": "10:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_1",
+      "done": false
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Gym",
+      "start": "17:30",
+      "end": "18:30",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_2",
+      "done": false
+    },
+    {
+      "date": "2026-07-02",
+      "title": "COMP6441 tutorial",
+      "start": "13:00",
+      "end": "14:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_3",
+      "done": false
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Assignment work",
+      "start": "19:00",
+      "end": "21:30",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_4",
+      "done": false
+    },
+    {
+      "date": "2026-07-03",
+      "title": "Badminton",
+      "start": "18:00",
+      "end": "20:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_5",
+      "done": false
+    },
+    {
+      "date": "2026-07-06",
+      "title": "COMP3121 lecture",
+      "start": "10:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_6",
+      "done": false
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Group project sync",
+      "start": "15:00",
+      "end": "16:00",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_7",
+      "done": false
+    },
+    {
+      "date": "2026-07-07",
+      "title": "Dentist",
+      "start": "09:00",
+      "end": "09:45",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_8",
+      "done": false
+    },
+    {
+      "date": "2026-07-07",
+      "title": "Gym",
+      "start": "17:30",
+      "end": "18:30",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_9",
+      "done": false
+    },
+    {
+      "date": "2026-07-08",
+      "title": "Tutoring shift",
+      "start": "14:00",
+      "end": "17:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_10",
+      "done": false
+    },
+    {
+      "date": "2026-07-09",
+      "title": "COMP6441 tutorial",
+      "start": "13:00",
+      "end": "14:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_11",
+      "done": false
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Piano practice",
+      "start": "20:00",
+      "end": "21:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_12",
+      "done": false
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Coffee with Jason",
+      "start": "11:00",
+      "end": "12:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_13",
+      "done": false
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Badminton",
+      "start": "18:00",
+      "end": "20:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_14",
+      "done": false
+    },
+    {
+      "date": "2026-07-11",
+      "title": "Study session",
+      "start": "13:00",
+      "end": "16:00",
+      "fixed": false,
+      "priority": 2,
+      "id": "evt_15",
+      "done": false
+    },
+    {
+      "date": "2026-07-13",
+      "title": "COMP3121 lecture",
+      "start": "10:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_16",
+      "done": false
+    },
+    {
+      "date": "2026-07-13",
+      "title": "Hackathon planning",
+      "start": "19:00",
+      "end": "20:30",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_17",
+      "done": false
+    },
+    {
+      "date": "2026-07-14",
+      "title": "Research meeting",
+      "start": "11:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_18",
+      "done": false
+    },
+    {
+      "date": "2026-07-14",
+      "title": "Gym",
+      "start": "17:30",
+      "end": "18:30",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_19",
+      "done": false
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Tutoring shift",
+      "start": "14:00",
+      "end": "17:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_20",
+      "done": false
+    },
+    {
+      "date": "2026-07-16",
+      "title": "COMP6441 tutorial",
+      "start": "13:00",
+      "end": "14:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_21",
+      "done": true
+    },
+    {
+      "date": "2026-07-16",
+      "title": "Assignment work",
+      "start": "18:30",
+      "end": "21:00",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_22",
+      "done": true
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Badminton",
+      "start": "18:00",
+      "end": "20:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_23",
+      "done": false
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Family dinner",
+      "start": "18:00",
+      "end": "21:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_24",
+      "done": false
+    },
+    {
+      "date": "2026-07-20",
+      "title": "COMP3121 lecture",
+      "start": "10:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_25",
+      "done": false
+    },
+    {
+      "date": "2026-07-20",
+      "title": "Grocery run",
+      "start": "16:00",
+      "end": "17:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_26",
+      "done": false
+    },
+    {
+      "date": "2026-07-21",
+      "title": "Gym",
+      "start": "17:30",
+      "end": "18:30",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_27",
+      "done": false
+    },
+    {
+      "date": "2026-07-21",
+      "title": "COMP6441 project work",
+      "start": "19:00",
+      "end": "22:00",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_28",
+      "done": false
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Tutoring shift",
+      "start": "14:00",
+      "end": "17:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_29",
+      "done": false
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Backend integration",
+      "start": "19:30",
+      "end": "22:00",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_30",
+      "done": false
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Doctors appointment",
+      "start": "07:15",
+      "end": "08:45",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_31",
+      "done": false
+    },
+    {
+      "date": "2026-07-23",
+      "title": "COMP6441 tutorial",
+      "start": "13:00",
+      "end": "14:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_32",
+      "done": false
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Meeting",
+      "start": "08:30",
+      "end": "10:15",
+      "fixed": false,
+      "priority": 2,
+      "id": "evt_33",
+      "done": false
+    },
+    {
+      "date": "2026-07-24",
+      "title": "COMP6441 deadline",
+      "start": "22:00",
+      "end": "23:00",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_34",
+      "done": false
+    },
+    {
+      "date": "2026-07-25",
+      "title": "Hackathon pitch",
+      "start": "10:00",
+      "end": "13:00",
+      "fixed": true,
+      "priority": 3,
+      "id": "evt_35",
+      "done": true
+    },
+    {
+      "date": "2026-07-25",
+      "title": "Badminton",
+      "start": "18:00",
+      "end": "20:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_36",
+      "done": true
+    },
+    {
+      "date": "2026-07-27",
+      "title": "COMP3121 lecture",
+      "start": "10:00",
+      "end": "12:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_37",
+      "done": false
+    },
+    {
+      "date": "2026-07-28",
+      "title": "Gym",
+      "start": "17:30",
+      "end": "18:30",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_38",
+      "done": false
+    },
+    {
+      "date": "2026-07-29",
+      "title": "Tutoring shift",
+      "start": "14:00",
+      "end": "17:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_39",
+      "done": false
+    },
+    {
+      "date": "2026-07-30",
+      "title": "COMP6441 tutorial",
+      "start": "13:00",
+      "end": "14:00",
+      "fixed": true,
+      "priority": 2,
+      "id": "evt_40",
+      "done": false
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Piano practice",
+      "start": "20:00",
+      "end": "21:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_41",
+      "done": false
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Badminton",
+      "start": "18:00",
+      "end": "20:00",
+      "fixed": false,
+      "priority": 1,
+      "id": "evt_42",
+      "done": false
+    },
+    {
+      "date": "2026-07-23",
+      "title": "hangout",
+      "start": "10:45",
+      "end": "11:45",
+      "fixed": false,
+      "priority": 3,
+      "id": "evt_43",
+      "done": false
+    },
+    {
+      "date": "2026-07-26",
+      "title": "hangout",
+      "start": "10:00",
+      "end": "11:00",
+      "fixed": false,
+      "priority": 2,
+      "id": "evt_44",
+      "done": false
+    },
+    {
+      "date": "2026-07-25",
+      "title": "asdas",
+      "start": "00:00",
+      "end": "00:15",
+      "fixed": false,
+      "priority": 2,
+      "done": false,
+      "id": "evt_45"
+    }
+  ],
+  "facts": [
+    "user never schedules anything before 10am",
+    "prefers gym in the late afternoon",
+    "plays badminton on Friday evenings",
+    "does deep work on assignments at night"
+  ],
+  "nextId": 47
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div class="title-block">
+        <h1 id="monthLabel">Month</h1>
+        <span id="yearLabel">Year</span>
+      </div>
+      <div class="controls">
+        <div class="view-switch" id="viewSwitch">
+          <button class="view-btn" data-view="day">Day</button>
+          <button class="view-btn" data-view="week">Week</button>
+          <button class="view-btn active" data-view="month">Month</button>
+          <button class="view-btn" data-view="year">Year</button>
+        </div>
+
+        <button class="today-btn" id="todayBtn">Today</button>
+        <button class="nav-btn" id="prevBtn">‹</button>
+        <button class="nav-btn" id="nextBtn">›</button>
+      </div>
+    </div>
+
+    <div class="calendar">
+      <div class="weekdays">
+        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      </div>
+      <div class="days" id="daysGrid"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="modal">
+      <h2 id="modalDate">Date</h2>
+      <p class="sub">Add or remove events for this day.</p>
+      <div class="event-list" id="modalEventList"></div>
+
+      <div class="form">
+        <input type="text" id="eventInput" placeholder="What's happening?" />
+
+        <div class="field-row">
+          <div class="field">
+            <label>Start</label>
+            <select id="startInput"></select>
+          </div>
+          <div class="field">
+            <label>End</label>
+            <select id="endInput"></select>
+          </div>
+        </div>
+
+        <p class="form-error" id="formError"></p>
+
+        <div class="field-row">
+          <div class="field">
+            <label>Type</label>
+            <div class="toggle" id="fixedToggle" data-fixed="false">
+              <button type="button" class="toggle-opt active" data-val="false">Flexible</button>
+              <button type="button" class="toggle-opt" data-val="true">Fixed</button>
+            </div>
+          </div>
+          <div class="field">
+            <label>Priority</label>
+            <div class="priority" id="priorityPicker" data-priority="2">
+              <button type="button" class="pri-opt" data-val="1">Low</button>
+              <button type="button" class="pri-opt active" data-val="2">Med</button>
+              <button type="button" class="pri-opt" data-val="3">High</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn" id="closeBtn">Close</button>
+        <button class="btn primary" id="addBtn">Add event</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="agenda" id="agenda">
+    <div class="agenda-head">
+      <span id="agendaTitle">This month</span>
+      <div class="agenda-head-right">
+        <span class="agenda-count" id="agendaCount"></span>
+        <button class="agenda-toggle" id="agendaToggle">–</button>
+      </div>
+    </div>
+    <div class="agenda-list" id="agendaList"></div>
+  </div>
+
+  <div class="chat" id="chat">
+    <div class="chat-head">
+      <span>Assistant</span>
+      <button class="chat-toggle" id="chatToggle">–</button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message… (Enter)" />
+      <button id="chatSend">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
