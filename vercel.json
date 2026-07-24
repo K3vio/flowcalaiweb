@@ -1,5 +1,10 @@
 {
   "rewrites": [
-    { "source": "/((?!.*\\.).*)", "destination": "/index.js" }
+    { "source": "/", "destination": "/index.js" },
+    { "source": "/events", "destination": "/index.js" },
+    { "source": "/events/done", "destination": "/index.js" },
+    { "source": "/stats", "destination": "/index.js" },
+    { "source": "/facts", "destination": "/index.js" },
+    { "source": "/assistant", "destination": "/index.js" }
   ]
 }
