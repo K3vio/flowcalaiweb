@@ -11,7 +11,7 @@ import { GoogleGenAI } from '@google/genai';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
-const ROOT = __dirname
+const ROOT = __dirname;
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
@@ -276,6 +276,12 @@ function recommendSlots(durationMin, fromDate, priority = 2, excludeId = null, d
 }
 
 // ---- event endpoints ----
+
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(ROOT, 'index.html'));
+});
+
 
 // browser loads all events on startup
 app.get('/events', (req, res) => {
