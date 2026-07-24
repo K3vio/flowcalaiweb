@@ -2,19 +2,25 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { GoogleGenAI } from '@google/genai';
+
+// on serverless the process cwd isn't the app folder, so resolve paths
+// relative to this file instead of '.'.
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const app = express();
 app.use(cors());
 app.use(express.json());
-app.use(express.static('.'));
+app.use(express.static(__dirname));
 
-// serverless filesystems are read-only except /tmp, so we read the committed
+// serverless filesystems are read-only except /tmp, so read the committed
 // store.json as a seed and do all writing to /tmp.
-const SEED_PATH = './store.json';
-const STORE_PATH = process.env.VERCEL ? '/tmp/store.json' : './store.json';
+const SEED_PATH = path.join(__dirname, 'store.json');
+const STORE_PATH = process.env.VERCEL ? '/tmp/store.json' : SEED_PATH;
 
 // everything lives here in memory. events is a flat list of event objects.
 // shape: { events: [ {id, date, title, start, end, fixed, priority, done} ], facts: [], nextId: 1 }
@@ -26,7 +32,7 @@ function loadStore() {
   try {
     raw = fs.readFileSync(STORE_PATH, 'utf-8');
   } catch {
-    // nothing in /tmp yet (cold start), fall back to the bundled seed file
+    // nothing in /tmp yet (cold start) -> fall back to the bundled seed
     try {
       raw = fs.readFileSync(SEED_PATH, 'utf-8');
       console.log('seeding store from bundled store.json');
@@ -56,8 +62,8 @@ function saveStore() {
   try {
     fs.writeFileSync(STORE_PATH, JSON.stringify(store, null, 2));
   } catch (err) {
-    // a failed write shouldn't take down the request. in-memory store is still
-    // correct for the life of this instance.
+    // a failed write shouldn't take down the request; the in-memory store
+    // is still correct for the life of this instance.
     console.error('save failed:', err.message);
   }
 }
