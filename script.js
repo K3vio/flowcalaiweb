@@ -1,5 +1,5 @@
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-const API = 'http://localhost:3000';
+const API = '';
 
 let current = new Date();
 let selectedDate = null;      // "YYYY-MM-DD" string for the open modal
